@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Controle Financeiro - Murilo</title>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js" integrity="sha512-qZvrmS2ekKPF2mSznTQsxqPgnpkI4DNTlrdUmTzrDgektczlKNRRhy5X5AAOnx5S09ydFYWWNSfcEqDTTHgtNA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  
+  <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <div class="resume">
+      <div>
+        Entradas
+        <span class="incomes">0.00</span>
+      </div>
+      <div>
+        Saídas
+        <span class="expenses">0.00</span>
+      </div>
+      <div>
+        Total
+        <span class="total">0.00</span>
+      </div>
+    </div>
+    <div class="newItem">
+      <div class="divGRP">
+        <label for="type">Grupo</label>
+        <select id="Desc">
+          <option>Alimentação</option>
+          <option>Uber</option>
+          <option>Maria Alice</option>
+          <option>Lorrayne</option>
+          <option>Outros</option>
+        </select>
+      </div>
+     
+        <!--
+      <div class="divCat">
+        <label for="type">Categoria</label>
+        <select id="Cat">
+          <option>******</option>
+          <option>******</option>
+        </select>
+      </div>-->
+
+      <div class="divValor">
+        <label for="amount">Valor</label>
+        <input type="number" id="Valor" />
+      </div>
+      <div class="divDate">
+        <label for="desc">Data</label>
+        <input type="date" id="Date" />
+      </div>
+
+      <div class="divType">
+        <label for="type">Tipo</label>
+        <select id="type">
+          <option>Entrada</option>
+          <option>Saída</option>
+        </select>
+      </div>
+      <button id="btnNew">Incluir</button>
+      <button id="btnGeneratePDF">Gerar PDF</button>
+    </div>
+    <div class="divTable">
+      <table>
+        <thead>
+          <tr>
+            <th class="columnGRP">Grupo</th>
+           <!-- <th class="columnCat">Categoria</th>-->
+            <th class="columnValor">Valor</th>
+            <th class="columnDate">Data</th>
+            <!--<th class="columnType">Tipo</th>-->
+            <th class="columnAction"></th>
+          </tr>
+        </thead>
+        <tbody>
+        </tbody>
+      </table>
+    </div>
+  </main>  
+
+  <script src="script.js"></script>
+</body>
+</html>

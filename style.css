@@ -1,0 +1,182 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'poppins', sans-serif;
+  outline: none;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+/* dados acima dos botoes */
+main {
+  max-width: 600px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* titulo e valores dentro dos cards */
+.resume {
+  display: flex;
+  padding: 10px 0;
+  gap: 5px;
+  width: 100%;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* titulo e valores dentro dos cards */
+.resume>div {
+  display: flex;
+  flex-direction: column;
+  box-shadow: 5px 5px 5px #ccc;
+  border-radius: 10px;
+  padding: 10px;
+  width: 150px;
+}
+
+/* Espaço de inserção de dados */
+.newItem {
+  display: flex;
+  gap: 3px;
+  align-items: end;
+  width: 100%;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.divGRP{
+  position: relative;
+  left: -1rem;
+  top: 0.5rem;
+}
+.divValor{
+  position: relative;
+  left: -1rem;
+  padding: 0 10px;
+  top: 0.5rem;
+}
+
+.divDate{
+  position: relative;
+  left: -1rem;
+  padding: 0px 10px;
+  top: 0.5rem;
+}
+
+.divType{
+  position: relative;
+  padding: 0px 0px;
+  left: -1rem;
+  top: 1rem;
+}
+
+.divGRP,
+.divCat,
+.divValor,
+.divDate,
+.divType,
+.divAmount {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+/* botoes */
+.newItem>button {
+  background-color: #2C73D2;
+  color: white;
+  border: none;
+  padding: 0 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  height: 40px;
+  position: relative;
+  top: 1.5rem;
+  align-items: center;
+}
+
+input,
+select {
+  padding: 5px;
+  width: 130px;
+  
+}
+
+/* Tabela onde aparecem os dados inseridos */
+.divTable {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  text-transform: uppercase;
+  color: #fff;
+  top: 1rem;
+}
+
+table {
+  width: 99%;
+  padding: 20px 0;
+  border-radius: 5px;
+  background-color: #000;
+  position: relative;
+  top: 2rem;
+}
+
+th {
+  text-align: start;
+  border-bottom: inset;
+  padding-bottom: 1px;
+}
+
+i {
+  font-size: 25px;
+}
+
+.columnGRP{
+  width:22%
+}
+
+/*.columnCat{
+  width:20%
+}*/
+
+.columnValor{
+  width:19%
+}
+
+.columnDate{
+  width:19%
+}
+
+/*.columnType {
+  width: 10%;
+  text-align: center;
+}*/
+
+.columnAction {
+  width: 5%;
+  text-align: center;
+  
+}
+
+.columnAction>button {
+  background: transparent;
+  border: none;
+  color: #fff;
+}
+
+.bxs-chevron-up-circle {
+  color: #00C9A7;
+}
+
+.bxs-chevron-down-circle {
+  color: #D83121;
+  position: relative;
+  top: 5px;
+}
